@@ -1,6 +1,14 @@
 // Curso Node com Jest - Digital Innovation One
+import express from 'express';
+
+// instancia do express para criacao do servidor
+const server = express();
+
+// funcao para apresentar log de servidor funcionando
 function welcome() {
-    console.log('bem vindos ao curso de node e jest');
+    console.log('servidor funcionando na porta 8080');
 };
 
-welcome();
+// iniciando servidor e definindo porta
+server.listen(8080, welcome);
+

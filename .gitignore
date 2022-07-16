@@ -1,0 +1,3 @@
+# Configurando arquivos para serem ignorados pelo git
+
+node_modules/
